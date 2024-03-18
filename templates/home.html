@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>CottonGuard: Plant Health Companion</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url("cotton.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero_area {
+      text-align: center;
+      background-color: #333; /* Dark grey background */
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+    }
+
+    .header_section h1 {
+      font-weight: bold;
+      margin: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .about_section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .detail-box {
+      background-color: #fff;
+      border: 5px solid #4CAF50;
+      padding: 20px;
+      backdrop-filter: blur(20px);
+    }
+
+    .detail-box h2 {
+      color: #333;
+      margin-top: 0;
+      backdrop-filter: blur(20px);
+    }
+
+    .btn-box {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .btn-box label,
+    .btn-box button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .btn-box button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      backdrop-filter: blur(20px);
+      transition: background-color 0.3s;
+      margin: 0 auto; /* Center the button */
+    }
+
+    .btn-box button:hover {
+      background-color: #45a049;
+    }
+
+    .footer_section {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <form action="/" method="post" enctype="multipart/form-data">
+    <div class="hero_area">
+      <header class="header_section">
+        <h1>CottonGuard: Plant Health Companion</h1>
+      </header>
+    </div>
+
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>What is this?</h2>
+              </div>
+              <p>
+                Welcome to CottonGuard, your dedicated partner in ensuring the well-being of your cotton plants! Powered by cutting-edge technology, CottonGuard employs advanced machine learning and image recognition to swiftly identify and diagnose potential diseases in your cotton crops. Our user-friendly interface provides instant insights, allowing you to take proactive measures for optimal plant health. Dive into educational resources tailored to cotton cultivation, and let CottonGuard be your go-to companion on the journey to a thriving cotton crop. Join us in cultivating a healthier, more robust cotton harvest with CottonGuard - where technology meets agriculture for sustainable plant care.
+              </p>
+              <div class="btn-box">
+                <label for="uploadImage">Upload an Image</label>
+                <input type="file" name="image" accept="image/*" required>
+                <button type="submit">Predict</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid footer_section">
+      <p>&copy; <span id="currentYear"></span> Model used: CNN. Design by kaviyadharshini -Cotton plant disease prediction</p>
+    </footer>
+  </form>
+</body>
+
+</html>
